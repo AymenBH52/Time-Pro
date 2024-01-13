@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Projectclock</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="/JS/main.js" defer></script>
+
+    
+</head>
+<body class="bg-light worldclock" >
+
+    <!-- Part of "Current time in Tunisia" -->
+    <div class="container text-center mt-4">
+        <h1 >Current time in Tunisia</h1>
+        <h2 id="currentTimeTunisia" class="text-dark d-inline"></h2>
+        <div class="d-inline">
+            <img src="/Images/drapeau.jpg" alt="" class="img-fluid mb-3" style="height: 30px; width: 30px;">
+        </div>
+    </div>
+    <!-- End part "Current time in Tunisia"  -->
+
+
+    <!-- Part of "World Time" -->
+    <div class="container mt-4">
+
+        <div class="col-lg-6 mx-auto ">
+
+            <div class="card mb-4">
+
+                <div class="card-body">
+
+                    <div class="container d-flex justify-content-center align-items-center text-center">
+                        <h1 class="mr-3">World Time</h1>
+                        <div class="d-inline">
+                            <img src="/Images/time-world.jpg" alt="" class="img-fluid" style="max-height: 50px;">
+                        </div>
+                    </div>
+        
+                        <div class="row">
+                            <div class="col">
+                                <label for="selectPays">Select a country : </label>
+
+                                <select id="allzone" class="form-control" >
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+    
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <div class="container worldclock">
+                        <div class="row">
+                            <div class="col">
+                                <b><label for="selectPays" style="color: rgb(16, 64, 194);";>The current time of the selected country is : </label></b>
+
+                                <h2 id="currentTime"></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End part "World Time" -->
+
+
+    <!-- Part of "Countdown Timer" -->
+    <div class="container mt-5">
+        <h1 class="text-center">Countdown Timer</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="row">
+
+                    <div class="col-4 text-center">
+                        <p class="label">Hours</p>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <p class="label">Minutes</p>
+                    </div>
+
+                    <div class="col-4 text-center">
+                        <p class="label">Seconds</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-4">
+                        <input id="hour" type="number" max="99" min="0" value="0" class="form-control time">
+                    </div>
+
+                    <div class="col-4">
+                        <input id="minute" type="number" max="60" min="0" value="0" class="form-control time">
+                    </div>
+
+                    <div class="col-4">
+                        <input id="sec" type="number" max="60" min="0" value="0" class="form-control time">
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-6">
+                        <button id="start" class="btn btn-primary btn-block">Start</button>
+                    </div>
+                    
+                    <div class="col-6">
+                        <button id="reset" class="btn btn-danger btn-block">Reset</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End part "Countdown Timer"-->
+
+    <!-- Part of "Alarm" -->
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center">Alarm</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <label for="alarmTime">Set Alarm Time:</label>
+                        <input type="time" id="alarmTime" class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col-4">
+                        <button id="setAlarm" class="btn btn-success btn-block">Set Alarm</button>
+                    </div>
+
+                    <div class="col-4">  
+                        <button id="stopAlarm" class="btn btn-danger btn-block">Stop Alarm</button> 
+                    </div>
+                    
+                    <div class="col-4">
+                        <button id="clearAlarm" class="btn btn-warning btn-block">Clear Alarm</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End part of "Alarm" -->
+
+    
+    
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
