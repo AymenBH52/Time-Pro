@@ -143,7 +143,11 @@ stopAlarmButton.addEventListener('click', function () {
 
 function playAlarm() {
     alarmAudio.play();
-    // alert('Alarm! Wake up!');
+    setTimeout(() => {
+        alert('Alarm! Wake up!');
+        
+    }, 100);
+    
 }
 
 function stopAlarm() {
